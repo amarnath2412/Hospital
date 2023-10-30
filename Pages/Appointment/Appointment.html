@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="AppointmentStyle.css">
+    <link rel="stylesheet" href="../Footer/Footerstyle.css">
+    <link rel="stylesheet" href="../../Css/dropdown.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Appointment</title>
+</head>
+<body>
+
+    <header class="header">
+
+        <div class="logo-container">
+            <a href="../../index.html" class="logo">
+              <img src="../../Assets/logo.png" alt="Logo" style="width: 60px; height: auto;">
+            </a>
+            <div class="appointment-text">Appointment</div>
+          </div>
+
+        <input type="checkbox" id="check">
+
+        <label for="check" class="icons">
+            <i class="fa-solid fa-bars" id="menu-icon"></i>
+            <i class="fa-solid fa-x" id="close-icon"></i>
+        </label>
+
+        <nav class="navbar">
+            <a href="../../index.html" style="--A:0">Home <i class="fa-solid fa-house"></i></a>
+            <a href="../About/About.html" style="--A:1">About <i class="fa-solid fa-user"></i></a>
+            <a href="../Doctor/Doctot.html" style="--A:2">Doctor <i class="fa-solid fa-user-doctor"></i></a>
+            <a href="../Blog/Blog.html" style="--A:3">Blog <i class="fa-solid fa-blog"></i></a>
+            <a href="../Contact/Contact.html" style="--A:5">Contact <i class="fa-solid fa-phone"></i></a>
+
+            <div class="dropdown navbar">
+              <a href="../Treatment/Treatment-1.html" style="--A:4; color: white; font-size: 17px;">Treatment <i class="fa-solid fa-stethoscope"></i></a>
+              <div class="dropdown-content navbar">
+                <a href="../Treatment/Pages/Kidney-stones.html">Kidney Stones</a>
+                <a href="../Treatment/Pages/Liver-Complaint.html">Liver Complaint</a>
+                <a href="../Treatment/Pages/Jaundice.html">Jaundice</a>
+                <a href="../Treatment/Pages/ECZEMA.html">ECZEMA</a>
+                <a href="../Treatment/Pages/Tuberculosis.html">Tuberculosis</a>
+                <a href="../Treatment/Pages/Ski-Diseases.html">Skin Diseases</a>
+                <a href="../Treatment/Pages/Anxiety.html">Anxiety</a>
+                <a href="../Treatment/Pages/Psychological-Disorders.html">Psychological Disorders</a>
+                <a href="../Treatment/Pages/Hair-Loss.html">Hair Loss</a>
+                <a href="../Treatment/Pages/Arthritis.html">Arthritis</a>
+                <a href="../Treatment/Pages/Ovarian-Diseases.html">Ovarian Diseases</a>
+              </div>
+            </div>
+        </nav>
+
+    </header>
+
+
+    <div class="gif-home">
+        <img class="gif" src="../../Assets/Contact-dt.gif" alt="auto play">
+      </div>
+
+    <div class="contact-container">
+        <form action="" enctype="multipart/form-data" onsubmit="return validateForm()">
+            <div class="inputGroup">
+                <label class="label" for="Name">Name</label>
+                <input class="input" required type="text" id="Name" name="Name" autocomplete="off">
+            </div>
+
+            <div class="inputGroup">
+                <label class="label" for="E-mail">E-mail</label>
+                <input class="input" required type="text" id="E-mail" name="E-mail" autocomplete="off">
+            </div>
+
+            <div class="inputGroup">
+                <label class="label" for="Phone-Number">Phone Number</label>
+                <input class="input" required type="tel" id="Phone-Number" name="Phone-Number" autocomplete="off">
+            </div>
+
+            <div class="inputGroup">
+                <label class="label" for="Address">Address</label>
+                <input class="input" required type="text" id="Address" name="Address" autocomplete="off">
+            </div>
+
+            <div class="inputGroup time">
+                <label for="appt">Choose a time for your meeting:</label>
+                <input type="time" id="appt" name="appt" min="09:00" max="18:00" required>
+                <small>Office hours are 9am to 6pm</small>
+            </div>
+
+            <div class="inputGroup file">
+                <label for="myfile">Select a file:</label>
+                <input type="file" id="myfile" name="myfile" accept=".pdf, .mp4"><br><br>
+            </div>
+
+            <input type="submit">
+        </form>
+    </div>
+
+    <br>
+    <br>
+
+    <!--Footer-->
+
+    <div class="footer">
+        <div class="top">
+          <div>
+            <h1>DHANVANTRI SIDDHALAYA</h1>
+            <p></p>
+          </div>
+          <div>
+            <a href="tel:+91 ">
+              <i class="fa-solid fa-phone"></i>
+            </a>
+
+            <a href="/">
+                <i class="fa-solid fa-at"></i>
+            </a>
+
+            <a href="/">
+              <i class="fa-brands fa-facebook"></i>
+            </a>
+
+            <a href="/">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+
+            <a href="/">
+              <i class="fa-brands fa-threads"></i>
+            </a>
+
+            <a href="/">
+              <i class="fa-brands fa-twitter"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="bottom">
+
+          <div>
+            <h4>Community</h4>
+            <a href="/">Github</a>
+            <a href="/">Issues</a>
+            <a href="/"></a>
+          </div>
+
+          <div>
+            <h4>Help</h4>
+            <a href="/">Support</a>
+            <a href="/">Contact Us</a>
+            <a href="/">Text Me</a>
+          </div>
+
+          <div>
+            <h4>Others</h4>
+            <a href="/">Terms of Service</a>
+            <a href="/">Privacy Policy</a>
+            <a href="/">License</a>
+          </div>
+        </div>
+      </div>
+
+</body>
+</html>
